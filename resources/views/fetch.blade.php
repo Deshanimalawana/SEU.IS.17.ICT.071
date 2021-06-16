@@ -15,6 +15,7 @@
             <th>Telephone No</th>
             <th>NIC NO</th>
             <th>Gender</th>
+            <th colspan="2">Action</th>
 
         </tr>
 
@@ -27,7 +28,9 @@
             <td>{{$y['phonenumber']}}</td>
             <td>{{$y['nic']}}</td>
             <td>{{$y['gender']}}</td>
-            
+            <td><a href="{{"edit/".$y['id']}}">Edit</a></td>
+            <td><a href="{{"delete/".$y['id']}}">Delete</a></td>
+
         </tr>
             
         @endforeach
